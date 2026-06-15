@@ -15,7 +15,7 @@ AIME
 NS-AIME
 → explanation graph + dual reporting
 
-![NS-AIME Example](docs/images/nsexample.png)
+<img width="1107" height="810" alt="nsexample" src="https://github.com/user-attachments/assets/e7381500-e6ec-46e2-a5cb-0c0e0d22a0ec" />
 
 The graph is not reported alone. NS-AIME always presents the original AIME explanation matrix together with the graph-based explanation, enabling explanation auditing through dual reporting.
 
