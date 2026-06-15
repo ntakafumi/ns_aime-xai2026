@@ -121,16 +121,6 @@ If you use this softwar in your research, please cite both AIME and NS-AIME.
   booktitle = {Late-breaking Work, Demos and Doctoral Consortium Joint Proceedings, co-located with the 4th World Conference on eXplainable Artificial Intelligence (xAI 2026)},
   year      = {2026},
   address   = {Fortaleza, Brazil},
-  publisher = {CEUR-WS.org}
-}
-```
-```
-@inproceedings{nakanishi2026nsaime,
-  title     = {NS-AIME: Rule-Guided Re-Constraint of Approximate Inverse Explanations},
-  author    = {Nakanishi, Takafumi},
-  booktitle = {Late-breaking Work, Demos and Doctoral Consortium Joint Proceedings, co-located with the 4th World Conference on eXplainable Artificial Intelligence (xAI 2026)},
-  year      = {2026},
-  address   = {Fortaleza, Brazil},
   publisher = {CEUR-WS.org},
   note      = {Accepted for publication and poster presentation}
 }
