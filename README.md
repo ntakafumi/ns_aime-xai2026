@@ -7,6 +7,18 @@
 **NS-AIME** is a rule-guided re-constraint layer on top of **[AIME](https://ieeexplore.ieee.org/abstract/document/10247033) [[Github]](https://github.com/ntakafumi/aime)**
 (Approximate Inverse Model Explanations). **NS-AIME** transforms AIME's numerical explanation matrix into a rule-auditable **directed explanation graph**.Starting from AIME's deterministic global attribution matrix `A†`, it induces monotonicity, threshold, and pairwise-AND rules from data, then solves a convex optimization problem that stays close to `A†` while encouraging rule satisfaction. The constrained matrix `B` is used to construct a human-readable **directed explanation graph**, in which features, thresholds, and pairwise-AND relations are organized as an auditable explanatory structure. NS-AIME reports the raw AIME explanation and the constrained graph-based explanation **together** (dual reporting), so large divergence is treated as an *audit signal*, never as a silent replacement.
 
+## What is NS-AIME?
+
+AIME
+→ explanation matrix A†
+
+NS-AIME
+→ explanation graph + dual reporting
+
+![NS-AIME Example](docs/images/nsexample.png)
+
+The graph is not reported alone. NS-AIME always presents the original AIME explanation matrix together with the graph-based explanation, enabling explanation auditing through dual reporting.
+
 Reference implementation for
 
 NS-AIME:
