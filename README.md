@@ -99,10 +99,13 @@ Full runnable demo (Titanic + 20 Newsgroups): [`examples/ns_aime_demo.ipynb`](ex
 If you use this software in your research, please cite our paper:
 ```
 @inproceedings{nakanishi2026nsaime,
-  title={Neuro-Symbolic AIME: Data-Driven Rule Induction and Re-Constrained Explanations with Logical Consistency},
-  author={Nakanishi, Takafumi},
-  booktitle={Proceedings of the XAI World Conference 2026},
-  year={2026}
+  title     = {NS-AIME: Rule-Guided Re-Constraint of Approximate Inverse Explanations},
+  author    = {Nakanishi, Takafumi},
+  booktitle = {Late-breaking Work, Demos and Doctoral Consortium Joint Proceedings, co-located with the 4th World Conference on eXplainable Artificial Intelligence (xAI 2026)},
+  year      = {2026},
+  address   = {Fortaleza, Brazil},
+  publisher = {CEUR-WS.org},
+  note      = {Accepted for publication and poster presentation}
 }
 ```
 
