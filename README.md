@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: Research Only](https://img.shields.io/badge/License-Research_Only-red.svg)](#-license)
 
-**NS-AIME** is a rule-guided re-constraint layer on top of **AIME**
+**NS-AIME** is a rule-guided re-constraint layer on top of **[AIME]{https://ieeexplore.ieee.org/abstract/document/10247033}**
 (Approximate Inverse Model Explanations). **NS-AIME** transforms AIME's numerical explanation matrix into a rule-auditable **directed explanation graph**.Starting from AIME's deterministic global attribution matrix `A†`, it induces monotonicity, threshold, and pairwise-AND rules from data, then solves a convex optimization problem that stays close to `A†` while encouraging rule satisfaction. The constrained matrix `B` is used to construct a human-readable **directed explanation graph**, in which features, thresholds, and pairwise-AND relations are organized as an auditable explanatory structure. NS-AIME reports the raw AIME explanation and the constrained graph-based explanation **together** (dual reporting), so large divergence is treated as an *audit signal*, never as a silent replacement.
 
 Reference implementation for
@@ -96,7 +96,34 @@ Full runnable demo (Titanic + 20 Newsgroups): [`examples/ns_aime_demo.ipynb`](ex
   "which inputs drive this output"); the interactive HTML animates that flow.
 
 ## 📚 Citation
-If you use this software in your research, please cite our paper:
+If you use this softwar in your research, please cite both AIME and NS-AIME.
+
+### AIME
+
+```bibtex
+@article{nakanishi2023aime,
+  author  = {Takafumi Nakanishi},
+  title   = {Approximate Inverse Model Explanations (AIME): Unveiling Local and Global Insights in Machine Learning Models},
+  journal = {IEEE Access},
+  volume  = {11},
+  pages   = {101020--101044},
+  year    = {2023},
+  doi     = {10.1109/ACCESS.2023.3314336}
+}
+```
+
+### NS-AIME
+
+```bibtex
+@inproceedings{nakanishi2026nsaime,
+  title     = {NS-AIME: Rule-Guided Re-Constraint of Approximate Inverse Explanations},
+  author    = {Nakanishi, Takafumi},
+  booktitle = {Late-breaking Work, Demos and Doctoral Consortium Joint Proceedings, co-located with the 4th World Conference on eXplainable Artificial Intelligence (xAI 2026)},
+  year      = {2026},
+  address   = {Fortaleza, Brazil},
+  publisher = {CEUR-WS.org}
+}
+```
 ```
 @inproceedings{nakanishi2026nsaime,
   title     = {NS-AIME: Rule-Guided Re-Constraint of Approximate Inverse Explanations},
